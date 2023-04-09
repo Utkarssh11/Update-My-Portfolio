@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease-in;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.sub-container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+
+:root {
+    --dark: #064663;
+    --black: #041c32;
+    --light: #e5e5e5;
+    --shadow: rgba(0,0,0,0.4);
+}
+/* :root {
+    --dark: #371B58;
+    --black: #3A3845;
+    --light: #E9D5DA;
+    --shadow: rgba(0,0,0,0.4);
+} */
+
+
+
+/********************** Reusable classes  */
+.common-heading {
+    color: var(--dark);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    padding: 5rem 1rem;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-grid {
+    display: grid;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: var(--dark);
+    cursor: pointer;
+    margin-top: 5rem;
+    width: 50%;
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.btn:hover {
+    background-color: var(--light);
+    color: var(--dark);
+}
+a {
+    text-decoration: none;
+}
+
+/* ************ Navbar CSS */
+header {
+    background-color: var(--dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+header .container {
+    margin-top: 0;
+}
+
+.navbar-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar-list li {
+    padding: 1rem 0;
+}
+
+.navbar-list li a {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--light);
+    transition: all 0.3s ease-in;
+}
+
+.navbar-list li a:hover,
+.navbar-list li a:focus {
+    color: #fff;
+    cursor: pointer;
+}
+
+/**************** Hero Section CSS */
+
+.hero-section {
+    background-color: var(--light);
+}
+.hero-section .d-grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.hero-section .container {
+    padding: 0;
+}
+
+.hero-section .img-div img {
+    width: 82%;
+    border: 4px solid var(--dark);
+    border-radius: 50%;
+}
+
+.detail span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.detail h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.detail p {
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    color: var(--dark);
+}
+
+/* ******************  Project section */
+
+.project-section {
+    margin-top: 5rem;
+}
+
+.project-section .d-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-wrapper {
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.project-wrapper:hover {
+    box-shadow: 0 3px 10px var(--shadow);
+}
+
+.project-section .project-wrapper img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.project-wrapper a {
+    padding: 0.5rem 1rem;
+}
+
+
+/* ********************** About Me Section  */
+.about-section {
+    background-color: var(--light);
+}
+
+.about-section p {
+    text-align: justify;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+/* **************************** Skill Section */
+
+.sub-container span {
+    padding: 0.8rem 1rem;
+    background-color: lightblue;
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+
+/* ****************************  Contact Form Section */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+form label {
+    font-weight: 500;
+}
+
+form input, form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--light);
+    border-radius: 5px;
+    outline: none;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    transition: all 0.2s ease-in;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--dark);
+}
+
+/* **************************** Footer CSS */
+
+
+footer {
+    background-color: var(--light);
+    padding: 2rem 1rem;
+}
+
+footer .d-flex {
+    justify-content: space-between;
+}
+
+footer .container {
+    font-size: 1.1rem;
+}
+
+footer .container a {
+    color: var(--dark);
+}
+
+footer .container a:hover {
+    color: var(--black);
+}
+
+.social-links a {
+    font-size: 2rem;
+    margin: 0 0.3rem;
+}
+
+
+
+
+/************************* Mobile Responsive */
+
+@media (max-width:1024px) {
+    .project-section .d-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:800px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    .hero-section p {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .hero-section .d-grid {
+        gap: 1rem;
+    }
+    .sub-container {
+        width: 70%;
+    }
+}
+
+
+@media (max-width:425px) {
+    html {
+        font-size: 80%;
+    }
+    .hero-section {
+        text-align: center;
+    }
+    .hero-section .d-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-section .img-div img {
+        width: 60%;
+    }
+    .container {
+        width: 95%;
+    }
+    .project-section .d-grid {
+        grid-template-columns: 1fr;
+    }
+    .sub-container {
+        width: 85%;
+    }
+    .sub-container span {
+        padding: 0.5rem 0.8rem;
+        margin: 1rem 0.5rem;
+    }
+    footer .d-flex{
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width:320px) {
+    html {
+        font-size: 70%;
+    }
+}
